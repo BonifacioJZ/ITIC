@@ -1,17 +1,6 @@
 <template>
   <div>
     <Carusel/>
-    <v-card>
-      <v-container
-        fluid
-        grid-list-lg>
-          <v-layout row wrap>
-              <v-flex xs12>
-                   <Calendar />
-              </v-flex>
-          </v-layout>
-      </v-container>
-    </v-card>
       
     <v-card>
       <v-container
