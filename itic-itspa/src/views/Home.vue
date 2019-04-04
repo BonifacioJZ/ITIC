@@ -1,0 +1,64 @@
+<template>
+  <div>
+    <Carusel/>
+    <v-card>
+      <v-container
+        fluid
+        grid-list-lg>
+          <v-layout row wrap>
+              <v-flex xs12>
+                   <Calendar />
+              </v-flex>
+          </v-layout>
+      </v-container>
+    </v-card>
+      
+    <v-card>
+      <v-container
+        fluid
+        grid-list-lg>
+          <v-layout row wrap>
+            <v-flex xs12 sm4 >
+              <Card/>
+            </v-flex>
+             <v-flex xs12 sm4 >
+              <Card/>
+            </v-flex>
+            <v-flex xs12 sm4 >
+              <Card/>
+            </v-flex>
+            <v-flex xs12 sm4 >
+              <Card/>
+            </v-flex>
+            <v-flex xs12 sm4>
+              <Card/>
+            </v-flex>
+            <v-flex xs12 sm4 >
+              <Card/>
+            </v-flex>
+            <!--Pagination-->
+            <v-flex xs12  >
+                <Pagination />
+            </v-flex>
+          </v-layout>
+      </v-container>
+    </v-card>
+      
+  </div>
+</template>
+
+<script>
+
+import Carusel from '../components/home/Carusel';
+import Card from "../components/cards/Card";
+import Calendar from "../components/home/Calendar";
+import Pagination from "../components/home/Pagination";
+  export default {
+    components: {
+      Carusel,
+      Card,
+      Calendar,
+      Pagination
+    }
+  }
+</script>
