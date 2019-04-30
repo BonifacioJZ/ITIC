@@ -10,21 +10,6 @@
             <v-flex xs12 sm4 >
               <Card/>
             </v-flex>
-             <v-flex xs12 sm4 >
-              <Card/>
-            </v-flex>
-            <v-flex xs12 sm4 >
-              <Card/>
-            </v-flex>
-            <v-flex xs12 sm4 >
-              <Card/>
-            </v-flex>
-            <v-flex xs12 sm4>
-              <Card/>
-            </v-flex>
-            <v-flex xs12 sm4 >
-              <Card/>
-            </v-flex>
             <!--Pagination-->
             <v-flex xs12  >
                 <Pagination />
@@ -42,12 +27,17 @@ import Carusel from '../components/home/Carusel';
 import Card from "../components/cards/Card";
 import Calendar from "../components/home/Calendar";
 import Pagination from "../components/home/Pagination";
+import webService from "../../webService";
+
   export default {
     components: {
       Carusel,
       Card,
       Calendar,
       Pagination
-    }
+    },
+    beforeCreate() {
+      
+    },
   }
 </script>

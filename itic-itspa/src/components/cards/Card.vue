@@ -24,6 +24,9 @@
 
 <script>
 export default {
-    name:"card"
+    name:"card",
+    props:{
+      datos:Array
+    }
 }
 </script>

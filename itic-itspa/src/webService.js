@@ -7,4 +7,5 @@ export default {
   async getMaestros() {
     return api().get("itic/teachers/");
   }
+
 };

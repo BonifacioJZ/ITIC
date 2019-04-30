@@ -95,7 +95,7 @@ export default {
     computed:{
         items(){
             return[{
-                name:'Users',
+                name:'Maestros',
                 children:this.users
                 
             }]
