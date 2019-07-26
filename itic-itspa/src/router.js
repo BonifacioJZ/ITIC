@@ -4,6 +4,7 @@ import Home from "./views/Home.vue";
 import Recidencias from "./views/recidencias/Residenias.vue";
 import Servicio from "./views/servicio/Servcio.vue";
 import Maestros from "./views/maestros/Maestros.vue";
+import Matter from "./views/Matter.vue";
 Vue.use(Router);
 
 export default new Router({
@@ -27,6 +28,11 @@ export default new Router({
       path: "/maestros",
       name: "maestros",
       component: Maestros
+    },
+    {
+      path:"/matter",
+      name:"matter",
+      component: Matter
     },
     {
       path: "/about",

@@ -72,6 +72,7 @@
         <v-toolbar-items class="hidden-sm-and-down">
           <v-btn flat @click="home()" class="white--text" >Inicio</v-btn>
           <v-btn flat @click="link('maestros')" class="white--text" >Maestros</v-btn>
+          <v-btn flat @click="link('matter')" class="white--text">Materias</v-btn>
           <Dropdown nombre="Procesos" :items="procesos"  />
         </v-toolbar-items>
       </v-toolbar>
