@@ -92,7 +92,8 @@ export default {
         isLap:false,
         items: [
           {icon: "home",text: "Home",path:""},
-          {icon:"",text:"Maestros",path:"maestros"}],
+          {icon:"",text:"Maestros",path:"maestros"},
+          {icon:"",text:"Materias",path:"matter"}],
         procesos: [
         {name:"Reidencias",path:"recidencias"},
         {name:"Servicio", path: "servicio"}

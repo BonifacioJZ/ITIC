@@ -1,16 +1,26 @@
 <template>
     <div>
-        <v-card>
+        <div>
+            <v-card>
             <v-container
                 fluid
                 grid-list-lg>
-                <v-layout row wrap>
+                <v-layout row wrap
+                v-for="(matter,i) in matters"
+                :key="i">
                     <v-flex xs12 sm4 >
-                        <Matter Name="Calclulo" HE="7" HP="8"/>
+                        <Matter :Name="matter.name" 
+                        :Clave="matter.clave" 
+                        :Semestre="matter.semestre"  
+                        :HE="matter.horas_escritas" 
+                        :HP="matter.horas_practicas"
+                        :Descripcion="matter.description"
+                        />
                     </v-flex>
                 </v-layout>
             </v-container>
         </v-card>
+        </div>
     </div>
 </template>
 <script>

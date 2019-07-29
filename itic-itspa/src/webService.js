@@ -8,6 +8,6 @@ export default {
         return api().get("itic/teachers/");
     },
     async getMatter() {
-        return api().get("itic/matters")
+        return api().get("itic/matters/")
     }
 };

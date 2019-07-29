@@ -4,11 +4,14 @@
               <v-card-title primary-title>
                 <div>
                   <div class="headline">{{Name}}</div>
-                  <span>{{Clave}}</span>
+                  <span>{{Clave}}</span> 
+                  <hr>
+                  <span>{{Semestre}}</span>
+                  <hr>
                 </div>
               </v-card-title>
               <v-card-text>
-                <span>{{Descripcion}}
+                <span v-html="Descripcion">
                   </span><br>
                   <hr>
                   <table >
@@ -31,9 +34,10 @@ export default {
       Name:String,
       Clave:String,
       Descripcion:String,
-      HE:Number,
-      HP:Number,
-      Archivo:String
+      HE:String,
+      HP:String,
+      Archivo:String,
+      Semestre:String
     },
     methods:{
       suma(HE,HP){
